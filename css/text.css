@@ -1,0 +1,29 @@
+
+.bottom-header > h1,
+.bottom-header > h2 { 
+    color:#fff;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 5px 5px 10px #333333; /* il primo elemento è ombra x, il secondo è ombra y ed il terzo rappresenta la sfocatura */
+}
+
+.bottom-header h1 {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-header h2 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h3 { 
+    color:#fff;
+    margin: 20px;
+    padding: 10px;
+}
+

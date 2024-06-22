@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrillex | CB10</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="./lamialista.js" type="module"></script>
+</head>
+<body>
+    <div class="layout">
+        <!-- header -->
+        <header id="header-home">
+            <div class="top-header">
+                <img src="../Immagini/logo.png" alt="Logo">
+                
+                <div class="menu">
+                    <!-- start navbar -->
+                    <nav>
+                        <ul>
+                            <li><a href="/home/home.html">home</a></li>
+                            <li><a href="/film/film.html">film</a></li>
+                            <li><a href="/lamialista/lamialista.html">my list</a></li>
+                            <li><a href="#footer">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end navbar -->
+                <!-- dropdown -->
+                <div class="Dropdown" id="accountDropdown">
+                    <div class="Dropdown-profile" id="profileDropdown">
+                        <span class="Photo"></span>
+                        <span class="Name" style="color: #fff;">Peter Nirsch</span>
+                    </div>
+                    <nav class="Dropdown-nav">
+                        <ul class="Dropdown-group">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#" id="deleteBtn">Delete Account</a></li>
+                            <li><a href="#" id="logoutBtn">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- end dropdown -->
+            <div class="searchFilm">
+                <div>
+                    <input type="text" id="searchBarFilm" placeholder="Search for movies" >
+                    <span id="error-film" style="color: red ; display: none;">You must enter at least three characters </span>
+                </div>
+            </div>
+            <!-- main -->
+            <main class="main" id="main-lamialista">
+                <div class="card-container" id="card-container-lamialista"></div>
+            </main>
+            <!-- end main -->
+            <!-- start popup -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <div class="div-star">
+                        <h2 id="modal-title">Movie title</h2>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="../Icone/star-svgrepo-com.svg" class="star-icon" id="star-icon" alt="Voto medio" title="Voto medio">
+                            <p style="margin: 10px;" id="votoMedio"></p>
+                        </div>
+                    </div>
+                    <p id="modal-description">Movie description...</p>                        
+                </div>
+            </div>
+            <!-- end popup -->
+            <!-- start popup delete--> 
+            <div id="deleteAccountPopup" class="popup">
+                <div class="popup-content-delete">
+                    <span class="close-btn" id="closeDeletePopup">&times;</span>
+                    <p>Are you sure you want to delete your account?</p>
+                    <div class="actions">
+                        <span class="action-icon-delete cancel-icon" id="cancelDelete">Cancel</span>
+                        <span class="action-icon-delete confirm-icon" id="confirmDelete">Confirm</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end popup delete-->     
+            <!-- footer -->
+            <footer id="footer">
+                <img src="../Immagini/logo.png" alt="Logo" id="logo-footer" style="width: 90px;">
+                <div class="footer-contatti-info">
+                    <p>Self-description
+                    </p>
+                    <p>Investor relations
+                    </p>
+                    <p>Legal notices
+                    </p>
+                    <p>Advertising preferences
+                    </p>
+                </div>
+                <div class="footer-contatti-info">
+                    <p>Help center
+                    </p>
+                    <p>Job opportunities
+                    </p>
+                    <p>Cookie preferences
+                    </p>
+                </div>
+                <div class="footer-contatti-info">
+                    <p>Gift cards
+                    </p>
+                    <p>Terms of use
+                    </p>
+                    <p>Company information
+                    </p>
+                </div>
+                <div class="footer-contatti-info">
+                    <p>Media Center
+                    </p>
+                    <p>Privacy
+                    </p>
+                    <p>Contact
+                    </p>
+                </div>
+                <div class="social-icons">
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="../Icone/facebook.svg" title="facebookIcona">
+                        </div>
+                        <div class="icon-container">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="../Icone/instagram.svg" title="instagram">
+                            </div>
+                            <div class="icon-container">            
+                                <a href="https://www.youtube.com/" target="_blank" rel="noopener"><img src="../Icone/youtube.svg" title="tiktokIcona"> 
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#header-home" class="scroll-to-top"><img style="width: 30px; height: auto;" src="../Icone/arrow-up-svgrepo-com.svg" title="scroll"></a>
+                    </footer>
+                    <!-- end footer -->
+                </body>
+                </html>
+                

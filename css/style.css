@@ -1,0 +1,31 @@
+@import url("index.css");
+@import url("header.css");
+@import url("text.css");
+@import url("colori-variabile.css");
+@import url("cards.css");
+@import url("form.css");
+@import url("footer.css");
+@import url("./popup.css");
+@import url("./mediaQuery.css");
+
+@media only screen and (max-width: 768px) {}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000000f3;
+    
+}
+
+/* LAYOUT */
+
+.layout{
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

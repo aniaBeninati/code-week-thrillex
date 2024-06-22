@@ -1,0 +1,129 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    max-height: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombra leggera */
+    position: relative;
+}
+
+.popup-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--color-yellow); /* Colore giallo definito */
+    margin-top: 10px;
+}
+
+.popup-content p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666; /* Colore grigio per il testo */
+}
+
+/* Stili per le icone delle azioni */
+.actions {
+    display: flex;
+    justify-content: space-around; /* Spazio tra le icone */
+    margin-top: 20px;
+}
+
+.action-icon {
+    width: 30px; /* Dimensione delle icone */
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Transizione per effetto hover */
+}
+
+.action-icon:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente al passaggio del mouse */
+}
+
+.div-star {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.star-icon {
+    width: 20px; /* Dimensione delle icone */
+    height: 20px;
+    margin-top: 10px;
+}
+
+/* Stili per l'icona di chiusura */
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 28px;
+    color: #666; 
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transizione per effetto hover */
+}
+
+.close-btn:hover {
+    color: var(--color-yellow); /* Cambia colore al passaggio del mouse */
+}
+
+#removeIcon {
+    display: none;
+}
+
+.popup-content-delete {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    max-height: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombra leggera */
+    position: relative;
+}
+
+.popup-content-delete  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--color-yellow); 
+    margin-top: 10px;
+}
+
+.popup-content-delete  p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666; 
+}
+
+.action-icon-delete {
+    width: 120px; /* Aumentato lo spazio per includere il testo correttamente */
+    height: 40px; /* Altezza aumentata per centrare il testo verticalmente */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Aggiunta transizione per effetto hover */
+    border: 2px solid var(--color-yellow); /* Bordo giallo */
+    border-radius: 5px; /* Arrotondamento dei bordi */
+    font-size: 16px; /* Dimensione del testo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.action-icon-delete:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente al passaggio del mouse */
+    background-color: var(--color-yellow); /* Cambia il colore dello sfondo */
+    color: white; /* Cambia il colore del testo */
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrillex | CB10</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="./home.js" type="module"></script>
+</head>
+<body>
+    <div class="layout">
+        <!-- header -->
+        <header id="header-home">
+            <div class="top-header">
+                <img src="../Immagini/logo.png" alt="Logo">
+                
+                <div class="menu">
+                    <!-- start navbar -->
+                    <nav>
+                        <ul>
+                            <li><a href="/home/home.html">home</a></li>
+                            <li><a href="/film/film.html">film</a></li>
+                            <li><a href="/lamialista/lamialista.html">my list</a></li>
+                            <li><a href="#footer">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end navbar -->
+                <!-- search -->
+                <div class="top-search" id="top-search">
+                    <span id="top-search-text" class="top-search-text">
+                        <img class="icona-lente" src="../Icone/search.png" alt="top-search">
+                    </span>
+                    <input id="cercaFilm"  type="text" placeholder="Search for movies">
+                </div>
+                <!-- end search -->
+                <!-- dropdown -->
+                <div class="Dropdown" id="accountDropdown">
+                    <div class="Dropdown-profile" id="profileDropdown">
+                        <span class="Photo"></span>
+                        <span class="Name" style="color: #fff;">Peter Nirsch</span>
+                    </div>
+                    <nav class="Dropdown-nav">
+                        <ul class="Dropdown-group">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#" id="deleteBtn">Delete Account</a></li>
+                            <li><a href="#" id="logoutBtn">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- end dropdown -->
+            <div class="video-header" id="header-with-video">
+                <video id="bg-video" autoplay loop muted>
+                    <source src="../Video/InShot_20240619_231331323.mp4" type="video/mp4">
+                </video>
+                <div class="header-content">
+                    <h1 class="title">Thrillex</h1>
+                    <h2 class="sub-title1"> The thrill of cinema, always with you</h2>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main class="main-content" id="main-content">
+            <h3>Top 5 </h3>
+            <ul class="top-five">
+            </ul>
+        </main>
+        <!-- Top popularity -->
+        <main class="main-content" id="main-content">
+            <h3>The most popular</h3>
+            <div class="wrapper-content">
+                <section class="carousel-section">
+                    <button id="prevPage" class="arrow-btn left-arrow">‹</button>
+                    <div class="card-container-content"></div>
+                    <button id="nextPage" class="arrow-btn right-arrow">›</button>
+                </section>
+            </div>
+        </main>
+        <!-- end Top popularity -->
+        <!--end main -->
+        <!-- Top rated -->
+        <main class="main-content" id="main-content-rated">
+            <h3>The highest rated</h3>
+            <div class="wrapper-content">
+                <section class="carousel-section">
+                    <button id="prevPageRated" class="arrow-btn left-arrow">‹</button>
+                    <div class="card-container-content-rated"></div>
+                    <button id="nextPageRated" class="arrow-btn right-arrow">›</button>
+                </section>
+            </div>
+        </main>
+        <!-- end Top rated -->
+        <!--end main -->
+        <!-- start popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <div class="div-star">
+                    <h2 id="modal-title">Movie Title</h2>
+                    <div style="display: flex; justify-content: center;">
+                        <img src="../Icone/star-svgrepo-com.svg" class="star-icon" id="star-icon" alt="Voto medio" title="Voto medio">
+                        <p style="margin: 10px;" id="votoMedio"></p>
+                    </div>
+                </div>
+                <p id="modal-description">Movie Description...</p>                        
+            </div>
+        </div>
+        <!-- end popup -->   
+        <!-- start popup delete--> 
+        <div id="deleteAccountPopup" class="popup">
+            <div class="popup-content-delete">
+                <span class="close-btn" id="closeDeletePopup">&times;</span>
+                <p>Are you sure you want to delete your account?</p>
+                <div class="actions">
+                    <span class="action-icon-delete cancel-icon" id="cancelDelete">Cancel</span>
+                    <span class="action-icon-delete confirm-icon" id="confirmDelete">Confirm</span>
+                </div>
+            </div>
+        </div>
+        <!-- end popup delete--> 
+        <!-- footer -->
+        <footer id="footer">
+            <img src="../Immagini/logo.png" alt="Logo" id="logo-footer" style="width: 90px;">
+            <div class="footer-contatti-info">
+                <p>Self-description
+                </p>
+                <p>Investor relations
+                </p>
+                <p>Legal notices
+                </p>
+                <p>Advertising preferences
+                </p>
+            </div>
+            <div class="footer-contatti-info">
+                <p>Help center
+                </p>
+                <p>Job opportunities
+                </p>
+                <p>Cookie preferences
+                </p>
+            </div>
+            <div class="footer-contatti-info">
+                <p>Gift cards
+                </p>
+                <p>Terms of use
+                </p>
+                <p>Company information
+                </p>
+            </div>
+            <div class="footer-contatti-info">
+                <p>Media Center
+                </p>
+                <p>Privacy
+                </p>
+                <p>Contact
+                </p>
+            </div>
+            <div class="social-icons">
+                <div class="icon-container">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="../Icone/facebook.svg" title="facebookIcona">
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="../Icone/instagram.svg" title="instagram">
+                        </div>
+                        <div class="icon-container">            
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener"><img src="../Icone/youtube.svg" title="tiktokIcona"> 
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#header-home" class="scroll-to-top"><img style="width: 30px; height: auto;" src="../Icone/arrow-up-svgrepo-com.svg" title="scroll"></a>
+                </footer>
+                <!-- end footer -->
+            </body>
+            </html>
+            

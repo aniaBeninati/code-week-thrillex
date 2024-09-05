@@ -31,6 +31,10 @@ Il repository è organizzato nelle seguenti sezioni principali:
 - **Design Responsivo**: Progettato per adattarsi a diversi dispositivi, garantendo un'esperienza uniforme su mobile, tablet e desktop.
 - **Gestione di Carte**: Funzionalità specifica per la visualizzazione e gestione delle carte informative nel progetto.
 
+## 🌐 Demo Online
+
+Visita la demo del progetto: [code-week-thrillex](https://code-week-thrillex.vercel.app/)
+
 ## 🚀 Come Iniziare
 
 Per ottenere una copia locale del progetto e avviarlo, segui questi passaggi:
